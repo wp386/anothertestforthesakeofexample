@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<title>Page Title</title>
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Toolbar and slide-menu styles */
+			.toolbar {
+				background-color: #333;
+				overflow: hidden;
+				display: flex;
+				justify-content: space-around;
+				padding: 10px 0;
+			}
+			.toolbar a {
+				color: white;
+				text-decoration: none;
+				padding: 14px 20px;
+				font-size: 22px;
+			}
+			.toolbar a:hover {
+				background-color: #575757;
+			}
+			.toolbar a:last-child {
+				color: red;
+				font-weight: bold;
+				text-decoration: underline;
+			}
+			.slide-menu {
+				position: fixed;
+				top: 0;
+				left: -100%;
+				width: 80%;
+				height: 100%;
+				background: #f5f5f5;
+				transition: left 0.3s ease;
+				display: flex;
+				box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+				z-index: 1000;
+			}
+			.slide-menu.active {
+				left: 0;
+			}
+			.menu-left {
+				width: 25%;
+				background: #222;
+				color: white;
+				padding: 20px;
+				overflow-y: auto;
+			}
+			.menu-left ul {
+				list-style: none;
+				padding: 0;
+			}
+			.menu-left li {
+				margin-bottom: 10px;
+			}
+			.menu-left button {
+				background: transparent !important;
+				border: none;
+				color: #ffffff !important;
+				font-weight: bold;
+				cursor: pointer;
+				width: 100%;
+				text-align: left;
+				padding: 10px;
+				font-size: 14px;
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
+				outline: none;
+			}
+			.menu-left button:hover,
+			.menu-left button:active,
+			.menu-left button:focus {
+				color: #ffffff !important;
+				background: transparent !important;
+			}
+			.menu-center {
+				flex: 1;
+				padding: 20px;
+				overflow-y: auto;
+			}
+			.close-btn {
+				position: absolute;
+				top: 10px;
+				right: 10px;
+				background: none;
+				border: none;
+				font-size: 24px;
+				cursor: pointer;
+				color: #333;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+		<!-- Menu Container -->
+		<div id="menuContainer"></div>
+
+		<!-- Wrapper -->
+		<div id="wrapper" class="divided" role="main">
+			<!-- Template: Add your page content here -->
+			<section>
+				<div class="content">
+					<h1>Page Title</h1>
+					<p>Page content goes here.</p>
+				</div>
+			</section>
+			<!-- End of template content -->
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="menu.js"></script>
+	</body>
+</html>
